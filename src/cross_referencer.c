@@ -46,10 +46,11 @@ int get_ch(void);
 void unget_ch(int);
 
 #define MAX 200
-int too_much_noise = 0, line_no = 0, line_ref = 1;
+static int too_much_noise = 0, line_no = 0, line_ref = 1;
 
 int main(void)
 {
+    printf("Please enter your input.\n");
     struct tree_node *root;
     char words[MAX];
     while(get_word_line(words) != EOF)
