@@ -34,7 +34,7 @@ int Search_if_keyword(char *, struct key []);
 #define TOTAL_KEYWORDS (sizeof(keywords)/sizeof(struct key))
 #define WORD_MAX 100
 char buf[WORD_MAX];
-int buffer = 0;
+static int buffer;
 
 int main(void){
     int check, store_val_temp, counter = 0;
